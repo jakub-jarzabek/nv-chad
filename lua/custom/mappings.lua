@@ -13,8 +13,7 @@ M.general = {
         require("conform").format()
       end,
       "formatting",
-    }
-
+    },
   },
   v = {
     [">"] = { ">gv", "indent" },
@@ -28,7 +27,12 @@ M.nvimtree = {
   },
 }
 
-
+M.rustaceanvim = {
+  n = {
+    ["<leader>K"] = { "<cmd> RustLsp hover actions <CR>" },
+    ["<leader>cca"] = { "<cmd> RustLsp codeAction <CR>" },
+  },
+}
 
 M.harpoon = {
   n = {

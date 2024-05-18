@@ -12,6 +12,7 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     go = { "gofmt", "goimports" },
+    rust = { "rustfmt" },
 
     sh = { "shfmt" },
   },

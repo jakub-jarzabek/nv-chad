@@ -85,6 +85,47 @@ local plugins = {
       -- see below for full list of options 👇
     },
   },
+  {
+    "mrcjkb/rustaceanvim",
+    opts = overrides.rustaceanvim,
+    lazy = false,
+    version = "^4",
+    ft = { "rust" },
+  },
+  -- {
+  --   "pmizio/typescript-tools.nvim",
+  --   event = { "BufReadPre", "BufNewFile" },
+  --   ft = { "javascript", "typescript", "typescriptreact" },
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --     "neovim/nvim-lspconfig",
+  --   },
+  --   opts = {
+  --     on_attach = require("plugins.configs.lspconfig").on_attach,
+  --     settings = {
+  --       tsserver_plugins = {
+  --         "@styled/typescript-styled-plugin",
+  --       },
+  --     },
+  --   },
+  -- },
+
+  -- {
+  --     "scottmckendry/cyberdream.nvim",
+  --     lazy = false,
+  --     priority = 1000,
+  --     config = function()
+  --         require("cyberdream").setup({
+  --             -- Recommended - see "Configuring" below for more config options
+  --             transparent = false,
+  --             italic_comments = true,
+  --             hide_fillchars = true,
+  --             borderless_telescope = true,
+  --             terminal_colors = true,
+  --         })
+  --         vim.cmd("colorscheme cyberdream") -- set the colorscheme
+  --     end,
+  -- },
 
   -- To make a plugin not be loaded
   -- {
@@ -100,6 +141,7 @@ local plugins = {
   --   lazy = false,
   -- }
   --
+
   {
     "sourcegraph/sg.nvim",
     lazy = false,
